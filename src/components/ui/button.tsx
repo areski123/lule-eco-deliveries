@@ -17,7 +17,8 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         hero: "bg-gradient-primary text-primary-foreground shadow-hero hover:shadow-button transform hover:scale-105 transition-all duration-300 font-semibold",
         logistics: "bg-logistics-green text-primary-foreground shadow-button hover:bg-logistics-green-light transition-all duration-300",
-        contact: "bg-primary text-primary-foreground border-2 border-primary hover:bg-transparent hover:text-primary transition-all duration-300",
+        contact: "bg-cta-orange text-white shadow-button hover:bg-cta-orange-hover transition-all duration-300 font-semibold rounded-full px-6",
+        orange: "bg-cta-orange text-white shadow-button hover:bg-cta-orange-hover transition-all duration-300 font-semibold rounded-full",
       },
       size: {
         default: "h-10 px-4 py-2",

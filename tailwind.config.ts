@@ -56,6 +56,10 @@ export default {
           grey: "hsl(var(--logistics-grey))",
           "grey-light": "hsl(var(--logistics-grey-light))",
         },
+        cta: {
+          orange: "hsl(var(--cta-orange))",
+          "orange-hover": "hsl(var(--cta-orange-hover))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",

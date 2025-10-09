@@ -216,7 +216,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" variant="hero" size="lg" className="w-full">
+                <Button type="submit" variant="orange" size="lg" className="w-full">
                   Envoyer la Demande
                 </Button>
               </form>

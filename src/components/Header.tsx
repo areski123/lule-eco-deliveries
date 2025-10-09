@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
+import luleLogo from "@/assets/lule-logo.png";
 
 const Header = () => {
   return (
@@ -8,13 +9,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">L</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">LULé</h1>
-              <p className="text-xs text-muted-foreground">Logistique Urbaine</p>
-            </div>
+            <img 
+              src={luleLogo} 
+              alt="LULé Logo" 
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Navigation */}

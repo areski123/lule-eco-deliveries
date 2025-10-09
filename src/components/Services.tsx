@@ -113,7 +113,7 @@ const Services = () => {
                 <div>✓ Suivi en ligne</div>
                 <div>✓ Support client</div>
               </div>
-              <Button variant="outline" className="mt-4">
+              <Button variant="outline" className="mt-4 rounded-full">
                 En savoir plus
               </Button>
             </div>
@@ -135,7 +135,7 @@ const Services = () => {
                 <div>✓ Support prioritaire</div>
                 <div>✓ Disponible 24/7</div>
               </div>
-              <Button variant="logistics" className="mt-4 group">
+              <Button variant="orange" className="mt-4 group">
                 Choisir Express
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
