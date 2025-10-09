@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Truck, Clock, Shield } from "lucide-react";
+import { ArrowRight, Truck, Clock, Shield, Send, Package } from "lucide-react";
 import heroTruck from "@/assets/hero-truck.jpg";
 
 const Hero = () => {
@@ -33,15 +33,15 @@ const Hero = () => {
             {/* Stats */}
             <div className="flex space-x-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">3</div>
+                <div className="text-3xl font-bold text-blue">3</div>
                 <div className="text-sm text-muted-foreground">Véhicules</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">2023</div>
+                <div className="text-3xl font-bold text-blue">2023</div>
                 <div className="text-sm text-muted-foreground">Fondée</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">24/7</div>
+                <div className="text-3xl font-bold text-blue">24/7</div>
                 <div className="text-sm text-muted-foreground">Service</div>
               </div>
             </div>
@@ -49,33 +49,40 @@ const Hero = () => {
             {/* Features */}
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Truck className="w-4 h-4 text-primary" />
+                <div className="w-8 h-8 bg-blue/10 rounded-full flex items-center justify-center">
+                  <Truck className="w-4 h-4 text-blue" />
                 </div>
                 <span className="text-sm font-medium">Véhicules &lt; 3.5T</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Clock className="w-4 h-4 text-primary" />
+                <div className="w-8 h-8 bg-blue/10 rounded-full flex items-center justify-center">
+                  <Clock className="w-4 h-4 text-blue" />
                 </div>
                 <span className="text-sm font-medium">Livraison Express</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Shield className="w-4 h-4 text-primary" />
+                <div className="w-8 h-8 bg-blue/10 rounded-full flex items-center justify-center">
+                  <Shield className="w-4 h-4 text-blue" />
                 </div>
                 <span className="text-sm font-medium">Assurance Incluse</span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="orange" size="lg" className="group">
-                Demander un Devis
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            <div className="grid sm:grid-cols-2 gap-4">
+              <Button variant="orange" size="lg" className="group justify-start">
+                <Send className="mr-2 h-5 w-5" />
+                <div className="text-left">
+                  <div className="text-xs opacity-90">Envoi et</div>
+                  <div className="font-bold">Livraison</div>
+                </div>
               </Button>
-              <Button variant="outline" size="lg">
-                Nos Services
+              <Button variant="blue" size="lg" className="group justify-start">
+                <Package className="mr-2 h-5 w-5" />
+                <div className="text-left">
+                  <div className="text-xs opacity-90">Collecte de</div>
+                  <div className="font-bold">Colis</div>
+                </div>
               </Button>
             </div>
           </div>

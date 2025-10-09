@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, Package as PackageIcon, Users } from "lucide-react";
 import luleLogo from "@/assets/lule-logo.png";
 
 const Header = () => {
@@ -36,18 +36,18 @@ const Header = () => {
           </nav>
 
           {/* Contact Info & CTA */}
-          <div className="flex items-center space-x-4">
-            <div className="hidden lg:flex items-center space-x-4 text-sm">
-              <div className="flex items-center space-x-1 text-muted-foreground">
-                <Phone size={16} />
-                <span>+33 6 51 88 81 44</span>
-              </div>
-              <div className="flex items-center space-x-1 text-muted-foreground">
-                <MapPin size={16} />
-                <span>Mulhouse</span>
-              </div>
+          <div className="flex items-center space-x-3">
+            <div className="hidden lg:flex items-center space-x-3">
+              <Button variant="ghost" size="sm" className="text-blue hover:text-blue-light">
+                <PackageIcon className="mr-2 h-4 w-4" />
+                Suivi de livraison
+              </Button>
+              <Button variant="ghost" size="sm" className="text-primary hover:text-primary-light">
+                <Users className="mr-2 h-4 w-4" />
+                Devenir franchise
+              </Button>
             </div>
-            <Button variant="contact" size="sm">
+            <Button variant="orange" size="sm">
               Devis Gratuit
             </Button>
           </div>

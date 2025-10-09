@@ -40,7 +40,7 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Nos <span className="text-primary">Services</span>
+            Nos <span className="text-blue">Services</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Solutions de transport flexibles adaptées à vos besoins dans le Haut-Rhin
@@ -65,11 +65,11 @@ const Services = () => {
                     />
                   </div>
                 ) : (
-                  <div className="w-16 h-16 mx-auto mb-4 bg-gradient-primary rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <service.icon className="w-8 h-8 text-primary-foreground" />
+                  <div className={`w-16 h-16 mx-auto mb-4 ${index % 2 === 0 ? 'bg-gradient-primary' : 'bg-gradient-blue'} rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon className="w-8 h-8 text-white" />
                   </div>
                 )}
-                <CardTitle className="text-xl text-foreground group-hover:text-primary transition-colors">
+                <CardTitle className={`text-xl text-foreground group-hover:${index % 2 === 0 ? 'text-primary' : 'text-blue'} transition-colors`}>
                   {service.title}
                 </CardTitle>
               </CardHeader>
@@ -80,7 +80,7 @@ const Services = () => {
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="text-sm text-foreground/80 flex items-center">
-                      <div className="w-1.5 h-1.5 bg-primary rounded-full mr-2"></div>
+                      <div className={`w-1.5 h-1.5 ${index % 2 === 0 ? 'bg-primary' : 'bg-blue'} rounded-full mr-2`}></div>
                       {feature}
                     </li>
                   ))}

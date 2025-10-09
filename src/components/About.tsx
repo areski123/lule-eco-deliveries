@@ -31,7 +31,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            À Propos de <span className="text-primary">LULé</span>
+            À Propos de <span className="text-blue">LULé</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Fondée en 2023, LULé est spécialisée dans la logistique urbaine de livraison écologique, 
@@ -97,8 +97,8 @@ const About = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="space-y-4 p-0">
-                <div className="w-16 h-16 mx-auto bg-gradient-primary rounded-full flex items-center justify-center">
-                  <value.icon className="w-8 h-8 text-primary-foreground" />
+                <div className={`w-16 h-16 mx-auto ${index % 2 === 0 ? 'bg-gradient-blue' : 'bg-gradient-primary'} rounded-full flex items-center justify-center`}>
+                  <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h4 className="text-lg font-semibold text-foreground">
                   {value.title}
