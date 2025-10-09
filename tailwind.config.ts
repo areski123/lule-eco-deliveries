@@ -60,6 +60,11 @@ export default {
           orange: "hsl(var(--cta-orange))",
           "orange-hover": "hsl(var(--cta-orange-hover))",
         },
+        blue: {
+          DEFAULT: "hsl(var(--blue))",
+          light: "hsl(var(--blue-light))",
+          dark: "hsl(var(--blue-dark))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -80,6 +85,7 @@ export default {
         "gradient-primary": "var(--gradient-primary)",
         "gradient-hero": "var(--gradient-hero)",
         "gradient-card": "var(--gradient-card)",
+        "gradient-blue": "var(--gradient-blue)",
       },
       boxShadow: {
         "card": "var(--shadow-card)",

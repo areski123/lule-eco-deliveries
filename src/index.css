@@ -22,6 +22,11 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 98%;
     --primary-light: 145 75% 35%;
     --primary-lighter: 145 65% 45%;
+    
+    /* Blue accent colors */
+    --blue: 230 85% 45%;
+    --blue-light: 230 75% 55%;
+    --blue-dark: 230 85% 35%;
 
     --secondary: 210 20% 96%;
     --secondary-foreground: 210 15% 20%;
@@ -56,6 +61,7 @@ All colors MUST be HSL.
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 100%);
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100% / 0.95), hsl(0 0% 100% / 0.98));
+    --gradient-blue: linear-gradient(135deg, hsl(var(--blue-dark)), hsl(var(--blue)));
     
     /* Shadows */
     --shadow-card: 0 4px 20px hsl(var(--primary) / 0.1);
